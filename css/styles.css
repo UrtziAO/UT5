@@ -1,0 +1,293 @@
+/* Reglas generales */
+
+/* variables de color */
+
+:root {
+--text-color:#444444;
+--text-color-red: #ff1616;
+--text-color_white: white;
+--background-color: white;
+--HF-background-color: black;
+--PA-background-color: #eeeeee;
+}        
+
+
+/* Reset margins and paddings */
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* ------------FORMATO GENERAL------------ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:var(--text-color);
+    background-color: var(--background-color);
+    text-align: justify;
+}
+
+main {
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera {
+    background-color: var(--HF-background-color);
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    
+}
+
+.logo {
+    width: 10rem;
+}
+
+footer {
+    margin-top: 2vw;
+    background-color: var(--HF-background-color);
+    height: 10rem;
+    position: relative;
+}
+
+footer div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ------------ENLACES------------ */
+
+a {
+    color:var(--background-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a.rojo{
+    color: var(--text-color-red);
+}
+
+.rojo:hover {
+    text-decoration: underline;
+}
+
+.nav-menu a:hover {
+    color: var(--text-color-red);
+}
+
+.actual {                /* Esta clase hace que el link de la página en la que nos encontramos esté resaltado */
+    font-style: italic;
+    font-weight:bold;
+}
+
+
+/* ------------TEXTOS------------ */
+
+h1, h2 {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-align: start;
+}
+
+p {
+    margin-bottom: 10px;
+    
+}
+
+footer p {
+    color: var(--text-color_white);
+}
+
+em {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.no-italic {
+    font-style: normal;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 0.5vw;
+    font-size: 3.5rem;
+}
+
+.titulo-secundario{
+    font-size: 3rem;
+}
+
+.pie-imagen {
+    text-align: end;
+    font-size: 1rem;
+}
+
+.piedearticulo{
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: var(--PA-background-color);
+}
+
+.piecentrado {
+    margin-top: 1vw;
+    font-size: 1.3rem;
+}
+
+.cita {
+    background-color: var(--PA-background-color);
+    margin-left: 1vw;
+    border-left:5px solid var(--text-color-red);
+    margin-bottom: 2vw;
+}
+
+.contenido-cita {
+    font-size: 1.8rem;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.textopresentacion {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1.1rem;
+}
+
+/* ------------LISTAS------------ */
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+ul {
+    margin-bottom: 1vw;
+}
+
+li {
+    margin-top: 0.5vw;
+}
+
+main li {
+    margin-left: 3vw;
+    list-style:disc;
+}
+
+.custom-list-item{
+    list-style-image: url('/img/icon-robot.png');
+    margin-bottom: 2vw;
+}
+
+.sublista {
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+/* ------------AUXILIARES------------ */
+
+.center {
+    text-align: center;
+}
+
+.espaciobottom{
+    margin-bottom: 2vw;
+}
+
+.imagen {
+    width: 72vw;
+}
+
+.fotoredonda {
+    margin-top: 3vw;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-video {
+    margin-top: 2vw;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+iframe {
+    border: none;
+}
+
+.tipos{
+    margin-left: 16vw;
+    margin-right: 16vw;
+    text-align: start;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1100px){
+
+    iframe {
+        width: 425px;
+        height: 239px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+
+    .titulo-secundario{
+        font-size: 2rem;
+    }
+
+    .img-small {
+        width: 50vw
+    }
+
+    iframe {
+        width: 300px;
+        height: 152px;
+    }
+
+}
