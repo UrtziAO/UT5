@@ -106,8 +106,9 @@ a.rojo{
 h1, h2 {
     margin-top: 2vw;
     margin-bottom: 1vw;
-    font-weight: 500;
+    font-weight:300;
     text-align: start;
+    line-height: 1;
 }
 
 p {
