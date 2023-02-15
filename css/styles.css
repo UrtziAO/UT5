@@ -56,10 +56,6 @@ main {
     
 }
 
-.logo {
-    width: 6rem;
-}
-
 footer {
     margin-top: 2vw;
     background-color: var(--HF-background-color);
@@ -77,22 +73,22 @@ footer div {
 
 /* ------------ENLACES------------ */
 
-a {
-    color:var(--background-color);
+.nav-menu a {
+    color:var(--text-color_white);
     text-decoration: none;
-    background-color: transparent;
-}
-
-a.rojo{
-    color: var(--text-color-red);
-}
-
-.rojo:hover {
-    text-decoration: underline;
 }
 
 .nav-menu a:hover {
     color: var(--text-color-red);
+}
+
+a {
+    color: var(--text-color-red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .actual {                /* Esta clase hace que el link de la página en la que nos encontramos esté resaltado */
@@ -113,7 +109,6 @@ h1, h2 {
 
 p {
     margin-bottom: 10px;
-    
 }
 
 footer p {
@@ -123,10 +118,6 @@ footer p {
 em {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-}
-
-.no-italic {
-    font-style: normal;
 }
 
 .titulo{
@@ -139,29 +130,27 @@ em {
     font-size: 2.5rem;
 }
 
-.pie-imagen {
-    text-align: end;
-    font-size: 0.7rem;
-}
-
-.piedearticulo{
+.pie-de-articulo{
     font-size: 0.9rem;
     text-align: center;
     background-color: var(--PA-background-color);
 }
 
-.piecentrado {
-    margin-top: 1.5vw;
+.texto-presentacion {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 0.9rem;
 }
 
 .cita {
     background-color: var(--PA-background-color);
     margin-left: 1vw;
+    margin-top: 2vw;
     border-left:5px solid var(--text-color-red);
     margin-bottom: 2vw;
 }
 
-.contenido-cita {
+blockquote {
     font-size: 1.2rem;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
@@ -169,17 +158,15 @@ em {
     margin-bottom: 1vw;
 }
 
-.textopresentacion {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    font-size: 0.9rem;
+.pie-imagen {
+    text-align: end;
+    font-size: 0.7rem;
 }
 
 /* ------------LISTAS------------ */
 
 ul, li {
     list-style: none;
-    padding: 0;
 }
 
 ul {
@@ -205,25 +192,15 @@ main li {
     margin-left: 1vw;
 }
 
-/* ------------AUXILIARES------------ */
 
-.center {
-    text-align: center;
-}
+/* ------------IMAGENES------------ */
 
-.espaciobottom{
-    margin-bottom: 2vw;
+.logo {
+    width: 6rem;
 }
 
 .imagen {
-    width: 72vw;
-}
-
-.fotoredonda {
-    margin-top: 3vw;
-    width: 10vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .contenedor-video {
@@ -237,6 +214,29 @@ main li {
 
 iframe {
     border: none;
+    width: 700;
+}
+
+.foto-redonda {
+    margin-top: 3vw;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ------------AUXILIARES------------ */
+
+.center {
+    text-align: center;
+}
+
+.espacio-top {
+    margin-top: 1vw;
+}
+
+.espaciobottom{
+    margin-bottom: 2vw;
 }
 
 .tipos{
@@ -251,6 +251,10 @@ iframe {
 
 .italic {
     font-style: italic;
+}
+
+.no-italic {
+    font-style: normal;
 }
 
 @media screen and (max-width: 1100px){
